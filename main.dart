@@ -27,12 +27,12 @@ void main() {
   // print("hello");
   //String operators
 
-  String fistName = "john";
-  String last_name = "joe";
-  String fullName = fistName + " " + last_name;
+  // String fistName = "john";
+  // String last_name = "joe";
+  // String fullName = fistName + " " + last_name;
 
-  print(fullName.toUpperCase());
-  print(fullName.toLowerCase());
+  // print(fullName.toUpperCase());
+  // print(fullName.toLowerCase());
 
   //type conversions
   // String strNumber = 'abc';
@@ -53,15 +53,75 @@ void main() {
   //null Safety
 // Non-nullable type
 
-  String name = "john";
+  // String name = "john";
 
   // Nullable type
-  String? guess = null;
+  // String? guess = null;
 
   //Late initialization
 
-  String? description;
-  print(description);
+  // String? description;
+  // print(description);
+
+  //Operators
+
+  //Arithmetic Operator
+
+  // 1)Addition
+  // print(1 + 1);
+  // // 2)Subtraction
+  // int totalAmount = 300;
+  // int amountSpent = 100;
+  // int remainingAmount = totalAmount - amountSpent;
+  // print(remainingAmount);
+  // // 3)Multiplication
+  // print(3 * 2);
+  // //Division
+  // print(3 / 2);
+  // // 5)Modulus or Modulo
+  // print(3 % 2);
+  // //Unary Minus
+  // print(-3);
+
+  // try {
+  //   print(3 / 0);
+  // } catch (e) {
+  //   print("3 its not divided by 0");// ignore the division by zero error
+  // }
+  //Increment/Decrement Operators
+  // int a = 5;
+  // int b = ++a;
+  // int c = --b;
+  // print(c);
+
+  //Comparison Operators
+  // 1) Equal to (==)
+  //2)Not Equal to (!=)
+  //3)Greater Than (>)
+  //4)Less Than (<)
+  //5)Greater Than or equal(>=)
+  //6)Less Than or equal(<=)
+//Logical Operators
+//1)AND(&&)
+//2)OR(||)
+//3)NOT(!)
+
+  // bool a = true;
+  // bool b = false;
+  // print(2==2 && 3==8);
+  // print(2!=2 || 3==3);
+  // print(!b);
+
+  //Assignment Operators
+  //1)Equal (=)
+  //2)Addition Assignment (+=)
+  //3)Subtraction Assignment (-=)
+  //4)Integer Division Assignment (/=)
+  //5)Modulus Assignment (%=)
+
+  int a = 10;
+  a %= 8;
+  print(a);
 }
 
 //Pascal Case
