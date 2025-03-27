@@ -119,9 +119,51 @@ void main() {
   //4)Integer Division Assignment (/=)
   //5)Modulus Assignment (%=)
 
-  int a = 10;
-  a %= 8;
-  print(a);
+  // int a = 10;
+  // a %= 8;
+  // print(a);
+
+  //Conditional Operator (Ternary Operator)
+  // int age = 18;
+
+  // String status = age >= 18 ? 'Adult' : 'Minor';
+//Null-Aware Operator
+  // String? name = null;
+  // String displayName = name ?? 'Guest';
+  //Null-Aware assignment Operator
+  // String? name = null;
+  // name ??= 'RK';
+  // print(name);
+
+  //Control flow
+  //If-Else Statements
+  // int score = 55;
+  // if (score >= 90) {
+  //   print("A Grade");
+  // } else if (score >= 80) {
+  //   print("B Grade");
+  // } else if (score >= 70) {
+  //   print("C Grade");
+  // } else {
+  //   print('Below C Grade');
+  // }
+
+  //Switch-Case Statement
+  // String fruit = 'banana';
+
+  // switch (fruit) {
+  //   case 'apple':
+  //     print('Red fruit');
+  //     break;
+  //   case 'banana':
+  //     print('Yellow fruit');
+  //     break;
+  //   case 'grape':
+  //     print('Purple fruit');
+  //     break;
+  //   default:
+  //     print('Unknown fruit');
+  // }
 }
 
 //Pascal Case
