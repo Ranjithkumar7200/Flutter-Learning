@@ -164,6 +164,39 @@ void main() {
   //   default:
   //     print('Unknown fruit');
   // }
+  //Loops
+
+  //For Loop
+  // for (int i = 0; i < 5; i++) {
+  //   print("default print ${i}");
+  // }
+
+  //while loop
+  // int count = 0;
+  // while (count < 5) {
+  //   print(count);
+  //   count++;
+  // }
+
+  //Do-While loop
+  // int count = 0;
+  // do {
+  //   print(count);
+  //   count++;
+  // } while (count < 3);
+
+  //Break and Continue Statements
+  // for (int i = 0; i < 5; i++) {
+  //   if (i == 1) continue;
+  //   print("default print ${i}");
+  // }
+
+  //Even number
+  // for (int i = 3; i < 20; i++) {
+  //   if (i % 2 == 0) {
+  //     print("Even number $i");
+  //   }
+  // }
 }
 
 //Pascal Case
