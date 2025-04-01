@@ -197,6 +197,53 @@ void main() {
   //     print("Even number $i");
   //   }
   // }
+
+  //Functions
+  //Basic Function
+
+  int add(a, int b) {
+    return a + b;
+  }
+
+  int sub(a, int b) {
+    return a - b;
+  }
+
+  String message(String a, String b) {
+    return a + b;
+  }
+
+  int result = add(3, 10);
+  int result1 = sub(3, 10);
+  String str = message("Hello", "Developers");
+  print(result);
+  print(result1);
+  print(str);
+
+  //Arrow function
+
+  int multiply(int a, int b) => a * b;
+  print(multiply(10, 12));
+//Optional Parameters
+//Optional positional parameters
+  String getFullName(String firstName, [String? lastName]) {
+    return lastName != null ? '$firstName $lastName' : firstName;
+  }
+
+// Optional named parameters
+  void printDetails({String? name, int? age}) {
+    print('Name: ${name ?? 'Unknown'}, Age: ${age ?? 'Unknown'}');
+  }
+
+//Required named parameters
+  void createUser({required String name, required int age}) {
+    print('Created user: $name, $age years old');
+  }
+
+  createUser(age: 20,name:'joe');
+  printDetails(age: 20, name: "john");
+
+  print(getFullName("John", "Joe"));
 }
 
 //Pascal Case
