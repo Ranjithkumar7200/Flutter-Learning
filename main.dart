@@ -201,51 +201,128 @@ void main() {
   //Functions
   //Basic Function
 
-  int add(a, int b) {
-    return a + b;
-  }
+//   int add(int a, int b) {
+//     return a + b;
+//   }
 
-  int sub(a, int b) {
-    return a - b;
-  }
+//   int sub(a, int b) {
+//     return a - b;
+//   }
 
-  String message(String a, String b) {
-    return a + b;
-  }
+//   String message(String a, String b) {
+//     return a + b;
+//   }
 
-  int result = add(3, 10);
-  int result1 = sub(3, 10);
-  String str = message("Hello", "Developers");
-  print(result);
-  print(result1);
-  print(str);
+//   int result = add(3, 10);
+//   int result1 = sub(3, 10);
+//   String str = message("Hello", "Developers");
+//   print(result);
+//   print(result1);
+//   print(str);
 
-  //Arrow function
+//   //Arrow function
 
-  int multiply(int a, int b) => a * b;
-  print(multiply(10, 12));
-//Optional Parameters
-//Optional positional parameters
-  String getFullName(String firstName, [String? lastName]) {
-    return lastName != null ? '$firstName $lastName' : firstName;
-  }
+//   int multiply(int a, int b) => a * b;
+//   print(multiply(12, 12));
+// //Optional Parameters
+// //Optional positional parameters
+//   String getFullName(String firstName, [String? lastName]) {
+//     return lastName != null ? '$firstName $lastName' : firstName;
+//   }
 
-// Optional named parameters
-  void printDetails({String? name, int? age}) {
-    print('Name: ${name ?? 'Unknown'}, Age: ${age ?? 'Unknown'}');
-  }
+// // Optional named parameters
+//   void printDetails({String? name, int? age}) {
+//     print('Name: ${name ?? 'Unknown'}, Age: ${age ?? 'Unknown'}');
+//   }
 
-//Required named parameters
-  void createUser({required String name, required int age}) {
-    print('Created user: $name, $age years old');
-  }
+// //Required named parameters
+//   void createUser({required String name, required int age}) {
+//     print('Created user: $name, $age years old');
+//   }
 
-  createUser(age: 20,name:'joe');
-  printDetails(age: 20, name: "john");
+//   createUser(age: 20,name:'joe');
+//   printDetails(age: 20, name: "john");
 
-  print(getFullName("John", "Joe"));
+//   print(getFullName("John", "Joe"));
+
+//Object or instance
+  // Operator obj = Operator();
+
+  // int result = obj.add(10, 10);
+  // int result1 = obj.sub(10, 10);
+  // print(result);
+  // print(result1);
+  // Constructors
+  // Default Constructor
+  Person p = Person();
+  Student stu = Student("Rethika", 22);
+  stu.display();
+  print("${p.name} is ${p.age} years old.");
+  Mobile m1 = Mobile("Samsung", 30000);
+  Mobile m2 = Mobile.withoutPrice("Samsung");
+  m1.show();
+  m2.show();
+
+  //Parameterized Constructor
 }
 
-//Pascal Case
+class Mobile {
+  String brand;
+  int? price;
 
-class FactoryName {}
+  // Default Constructor
+  Mobile(this.brand, this.price);
+
+  // Named Constructor
+  Mobile.withoutPrice(this.brand) {
+    price = 20000;
+  }
+
+  void show() {
+    print("Brand: $brand, Price: $price");
+  }
+}
+
+// Constructors
+class Student {
+  String name;
+  int age;
+
+  // Constructor with parameters
+  Student(this.name, this.age);
+
+  void display() {
+    print("Student: $name, Age: $age");
+  }
+}
+
+//
+class Person {
+  String name = "John";
+  int age = 24;
+  void println() {
+    print("${name} is ${age} years old.");
+  }
+}
+//Classes and Objects
+
+// class Operator {
+//   // String brand;
+//   // int year;
+
+//   int add(int a, int b) {
+//     return a + b;
+//   }
+
+//   int sub(int a, int b) {
+//     return a - b;
+//   }
+
+//   int mul(int a, int b) {
+//     return a * b;
+//   }
+
+//   double div(int a, int b) {
+//     return a / b;
+//   }
+// }
