@@ -254,56 +254,56 @@ void main() {
   // print(result1);
   // Constructors
   // Default Constructor
-  Person p = Person();
-  Student stu = Student("Rethika", 22);
-  stu.display();
-  print("${p.name} is ${p.age} years old.");
-  Mobile m1 = Mobile("Samsung", 30000);
-  Mobile m2 = Mobile.withoutPrice("Samsung");
-  m1.show();
-  m2.show();
+  // Person p = Person();
+  // Student stu = Student("Rethika", 22);
+  // stu.display();
+  // print("${p.name} is ${p.age} years old.");
+  // Mobile m1 = Mobile("Samsung", 30000);
+  // Mobile m2 = Mobile.withoutPrice("Samsung");
+  // m1.show();
+  // m2.show();
 
   //Parameterized Constructor
 }
 
-class Mobile {
-  String brand;
-  int? price;
+// class Mobile {
+//   String brand;
+//   int? price;
 
-  // Default Constructor
-  Mobile(this.brand, this.price);
+//   // Default Constructor
+//   Mobile(this.brand, this.price);
 
-  // Named Constructor
-  Mobile.withoutPrice(this.brand) {
-    price = 20000;
-  }
+//   // Named Constructor
+//   Mobile.withoutPrice(this.brand) {
+//     price = 20000;
+//   }
 
-  void show() {
-    print("Brand: $brand, Price: $price");
-  }
-}
+//   void show() {
+//     print("Brand: $brand, Price: $price");
+//   }
+// }
 
 // Constructors
-class Student {
-  String name;
-  int age;
+// class Student {
+//   String name;
+//   int age;
 
-  // Constructor with parameters
-  Student(this.name, this.age);
+//   // Constructor with parameters
+//   Student(this.name, this.age);
 
-  void display() {
-    print("Student: $name, Age: $age");
-  }
-}
+//   void display() {
+//     print("Student: $name, Age: $age");
+//   }
+// }
 
 //
-class Person {
-  String name = "John";
-  int age = 24;
-  void println() {
-    print("${name} is ${age} years old.");
-  }
-}
+// class Person {
+//   String name = "John";
+//   int age = 24;
+//   void println() {
+//     print("${name} is ${age} years old.");
+//   }
+// }
 //Classes and Objects
 
 // class Operator {
